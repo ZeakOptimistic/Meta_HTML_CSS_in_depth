@@ -1,0 +1,170 @@
+body {
+    background-color: white;
+    font-family: "Markazi Text", serif;
+    margin: 3rem 5%;
+    color: #333;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+header > img {
+    display: block;
+    margin: 0 auto 1rem;
+    width: 500px;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    background-color: darkolivegreen;
+    border-radius: 20px;
+}
+
+nav li {
+    display: inline-block;
+    margin: 1 5rem;
+    font-size:large;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+nav a:hover {
+    color: olivedrab;
+    text-decoration: underline;
+}
+
+.promo-banner {
+    background-image: url('banner.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    margin: 2rem 0;
+    padding: 3rem 2rem;
+    position: relative;
+    color: white;
+}
+
+.promo-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    border-radius: 15px;
+    z-index: 0;
+}
+
+.promo-content {
+    position: relative;
+    z-index: 1;
+}
+
+.promo-banner h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.promo-banner p {
+    font-size: 1rem;
+    line-height: 1.5;
+    max-width: 800px;
+}
+
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+article {
+    flex: 1;
+    background-color: wgite;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+article:hover {
+    transform: scale(1.03);
+    background-color: #f6f6f6;
+}
+
+article img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+article h2 {
+    font-size: 20px;
+}
+
+article a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+article a:hover {
+    color: olivedrab;
+    text-decoration: underline;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: white;
+    padding: 2rem 1rem;
+    margin-top: 3rem;
+}
+
+.footer-left img {
+    width: 50px;
+    margin-left: 1rem;
+}
+
+.footer-right {
+    flex: 1;
+    text-align: right;
+    padding-right: 1rem;
+}
+
+.footer-right hr {
+    border: none;
+    border-top: 1px solid #333;
+    margin: 0 0 0.5rem 0;
+}
+
+.footer-right p {
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+/* 556b2e
+b5b35d
+fada5f
+fdfd95
+acbf61 */
